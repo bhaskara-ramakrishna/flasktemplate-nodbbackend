@@ -23,7 +23,8 @@ def get_endpoints():
     sums_request_base_url = request.base_url
     return jsonify(
         {
-            'sums': f'{sums_request_base_url}sums'
+            'sums': f'{sums_request_base_url}sums',
+            'multiplication': f'{sums_request_base_url}multiplication'
         }
     )
 

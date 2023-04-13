@@ -117,26 +117,6 @@ class TestAppMovieGet(TestAppClient):
                          {'sums': []},
                          UNITTESTCHECK_ARRELEM)
 
-class TestAppMovieGet(TestAppClient):
-    """
-    Test Case suite: HTTP GET scenarios.
-    """
-    def test_sums_get_all_sums(self):
-        """
-        This unit test validates that the current implementation returns no
-        Sums.
-        """
-        response = self.client.get('/sums')
-        self.assertEqual(response.status_code,
-                         200,
-                         UNITTESTCHECK_CODE200)
-        self.assertEqual(response.mimetype,
-                         MIME_APPJSON,
-                         UNITTESTCHECK_APPJSON)
-        self.assertEqual(response.json,
-                         {'sums': []},
-                         UNITTESTCHECK_ARRELEM)
-
 
 #
 # HTTP POST TESTS
